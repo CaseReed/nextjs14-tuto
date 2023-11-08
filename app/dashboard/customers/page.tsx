@@ -19,7 +19,5 @@ export default async function Page({
 
     const customers = await fetchFilteredCustomers(query)
 
-    console.log(customers)
-
     return <Table customers={customers} />
 }
